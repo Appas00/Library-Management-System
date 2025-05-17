@@ -1,0 +1,83 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #00d2ff, #3a47d5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card style */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05) rotateY(3deg);
+}
+
+/* Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button, .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+button:hover, .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #3f5efb;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

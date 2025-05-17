@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Book</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🔍 Search Book</h1>
+  <div class="card">
+    <form method="POST">
+      <input type="text" name="query" placeholder="Enter Book Title" required>
+      <button type="submit" class="btn">Search</button>
+    </form>
+
+    {% if result %}
+      <h2>Search Results:</h2>
+      <ul>
+        {% for book in result %}
+          <li>{{ book[0] }} - {{ book[1] }}</li>
+        {% endfor %}
+      </ul>
+    {% elif result is not none %}
+      <p>No books found.</p>
+    {% endif %}
+    <a href="/"><button class="btn">⬅ Back</button></a>
+  </div>
+</body>
+</html>

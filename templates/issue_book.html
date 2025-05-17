@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Issue Book</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>📕 Issue a Book</h1>
+  <div class="card">
+    <form method="POST">
+      <input type="text" name="title" placeholder="Enter Book Title" required>
+      <button type="submit" class="btn">Issue</button>
+    </form>
+
+    {% if message %}
+      <p style="margin-top: 15px;">{{ message }}</p>
+    {% endif %}
+
+    <a href="/"><button class="btn">⬅ Back</button></a>
+  </div>
+</body>
+</html>
