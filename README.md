@@ -1,6 +1,6 @@
 📚 Library Management System
+![image](https://github.com/user-attachments/assets/ad7d7eec-2461-4d28-a29a-71d6916daa0e)
 
-![image](https://github.com/user-attachments/assets/e1ab9f17-6bae-403b-8119-9611bd15761b)Quiz App
 
 A simple and visually appealing Library Management System built with Flask and Python, featuring modern UI, animations, and CSV-based data handling.
 
@@ -57,7 +57,8 @@ Open your browser and visit
 http://127.0.0.1:5000/
 
 Screenshots
-![image](https://github.com/user-attachments/assets/ad7d7eec-2461-4d28-a29a-71d6916daa0e)
+![image](https://github.com/user-attachments/assets/e1ab9f17-6bae-403b-8119-9611bd15761b)Quiz App
+
 ![image](https://github.com/user-attachments/assets/d9e9ecf9-b664-4055-88e2-64a47a6458b2)
 ![image](https://github.com/user-attachments/assets/5ba85a98-15d2-4309-b88b-4cfb2056ba69)
 
